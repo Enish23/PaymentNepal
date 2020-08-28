@@ -468,12 +468,13 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 52px 0;
   overflow: hidden;
+  
 }
 
 .section-bg {
-  background-color: #f7fbfe;
+  background-color: #c0c0c0;
 }
 
 .section-title {
