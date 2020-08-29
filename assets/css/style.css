@@ -1662,3 +1662,14 @@ section {
   background-color: black;
   color: white;
 }
+
+.dark-mode h2 {
+  color:white;
+}
+.dark-mode p {
+  color:white;
+}
+.dark-mode #hero h2 {
+  color:white;
+}
+
