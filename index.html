@@ -54,6 +54,7 @@
           
           <li><a href="#contact">Contact</a></li>
 
+    
           
         </ul>
         <button class="sassy" style="position: absolute; right: 1rem; padding-left: 5px;padding-right: 5px;" onclick="myFunction()">Dark Mode</button>
@@ -63,25 +64,32 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-         
-          <h2 data-aos="fade-up" data-aos-delay="400">To be the most preferred e-payment processing partner for cross-border transactions</h2>          
-            <div data-aos="fade-up" data-aos-delay="800">
+  <div class="-section1" >
+    <img class="mySlides" src="assets/img/images/ec2.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/images/2.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/images/2.jpg" style="width:100%">
+  </div>
   
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="assets/img/images/gatelogo.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+      
 
-  </section><!-- End Hero -->
+  </section><!-- End Hero  
+ -->
 
   <main id="main">
 
@@ -95,12 +103,16 @@
 
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-           <p>
-            Payment Nepal is a financial technology startup company that is authorised by Nepal Rastra Bank (The Central Bank). Our first mission is to create a payment platform through internet. The e-commerce platform is used by Small Medium Enterprises (SME) & other individuals/groups of Nepal having a potential to sell their services or products to the audience (customer) in Nepal & abroad. They can accept payments & manage their businesses online.</p>
+          <img src="assets/img/images/sec.jpg" class="ab">
   
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <p>
+            <p class="p-col">
+              Payment Nepal is a financial technology startup company that is authorised by Nepal Rastra Bank (The Central Bank). Our first mission is to create a payment platform through internet. 
+              The e-commerce platform is used by Small Medium Enterprises (SME) & other individuals/groups of Nepal having a potential to sell their services or products to the audience (customer) 
+              in Nepal & abroad. They can accept payments & manage their businesses online.<br> 
+              <br>
+
               Our sole ambition is to create a bridge between people & technology in order to create a more cashless economy & increase the foreign currency earning of Nepal through a cross border e-commerce. We endeavor to make the internet a soul of our economy. Our ambition could be a metaphor of positive upheaval in the way we do the local & cross border business.  We want to bring all entrepreneurs & other parties from every nook & corner of the country under e-commerce umbrella.
 
             </p>
@@ -273,7 +285,7 @@
   </ul>
 </div>
 
-    </section>-->
+    </section>
     <!-- End Features Section -->
 
     
@@ -558,7 +570,7 @@
 
         <div class="row">
 
-          <div class="col-lg-5 col-md-7" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-7" data-aos="fade-up" data-aos-delay="100">
             <div class= "map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.6904290373172!2d85.29117871440516!3d27.726842931243244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb196488edeb03%3A0x8995cdade4eb6692!2sGateway%20Payment%20Service%20Pvt.%20Ltd!5e0!3m2!1sen!2snp!4v1595863637933!5m2!1sen!2snp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                           
@@ -593,11 +605,12 @@
           </div>
 
        
-          <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <img src="assets/img/images/PCI-DSS.png" alt="" style= "width: 81%;">
+          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/images/PCI-DSS.png" alt="" style= "width: 50%;"> <img src="assets/img/images/visa.png" alt=""style= "width: 50%;">
     
           
-            <img src="assets/img/images/visa.png" alt="">
+            
+
 
             
           </div>
@@ -688,6 +701,7 @@ logged_out_greeting="Hello thanks for contacting us. How can we help you?">
      element.classList.toggle("dark-mode");
   }
   </script>
+  
   
 </body>
 
